@@ -147,12 +147,7 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     gralloc.default \
-    vendor.qti.hardware.memtrack-service \
-    AdvancedDisplay
-
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+    vendor.qti.hardware.memtrack-service
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
@@ -180,10 +175,6 @@ $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
-
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
